@@ -1,5 +1,3 @@
-odd = [1, 3, 4, 5, 9]
-
 # 리스트 유형
 a = []
 b = [1, 2, 3]
@@ -76,3 +74,34 @@ print(a)
 a = [1,2,3]
 print( a.index(3) )
 print( a.index(1) )
+
+# 리스트에 요소 삽입(insert)
+a = [1, 2, 3]
+a.insert(0,4)
+print(a)
+
+# 리스트 요소 제거(remove)
+a = [1,2,3,1,2,3]
+a.remove(3)
+print(a)
+a.remove(3)
+print(a)
+
+# 리스트 요소 끄집에내기(pop)
+# pop()은 리스트의 맨 마지막 요소를 돌려 주고 그 요소는 삭제
+a = [1,2,3]
+a.pop()
+print(a)
+
+# 리스트에 포함된 요소 x의 개수 세기(count)
+a = [1,2,3]
+a.pop(1)
+print(a)
+
+# 리스트 확장(extend)
+a = [1,2,3]
+a.extend([4,5])
+print(a)
+b = [6,7]
+a.extend(b)
+print(a)
