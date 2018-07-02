@@ -13,7 +13,7 @@ a[1] = 4
 print(a,b) # 동일
 
 
-# 깊은 복사
+# 복사
 
 # 1) [:] 이용
 a = [1,2,3]
@@ -22,11 +22,10 @@ a[1] = 4
 print(a,b) # 다름
 
 # 2) copy 모듈 이용 
-from copy import copy
+from copy import copy # 깊은 복사시에는 from copy import deepcopy
 a = [1,2,3]
 b = copy(a)
 print( b is a ) # False
-
 
 # 변수를 만드는 여러 가지 방법
 a, b = ('python','life')
